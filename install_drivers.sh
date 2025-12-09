@@ -24,7 +24,7 @@ echo "Installing NVIDIA local repository..."
 sudo dpkg -i ${NVIDIA_DEB}
 
 # Step 5: Add repo key
-sudo cp /var/nvidia-driver-local-repo-*/nvidia-driver-local-*.key /usr/share/keyrings/
+sudo cp /var/nvidia-driver-local-repo-*/nvidia-driver-local-*.gpg /usr/share/keyrings/
 
 # Step 6: Update package list
 sudo apt-get update -y
